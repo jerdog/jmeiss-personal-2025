@@ -11,16 +11,13 @@ autoSwitchAppearance = true
 
 defaultThemeColor = "#FFFFFF"
 
-enableSearch = false
+enableSearch = true
 enableCodeCopy = false
 enableImageLazyLoading = true
 enableImageWebp = true
 
 # robots = ""
 fingerprintAlgorithm = "sha256"
-
-# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
-disclaimer = "Trans rights are human rights. Abortion is healthcare. Black Lives Matter."
 
 # Meta description for your site.  This will help the search engines to find your site.
 description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
@@ -33,6 +30,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
 
 [footer]
   showCopyright = true
+  showDisclaimer = true #
   showThemeAttribution = true
   showAppearanceSwitcher = false
   showScrollToTop = true

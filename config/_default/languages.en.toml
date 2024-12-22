@@ -10,6 +10,8 @@ copyright = "&copy; 2024-25. Jeremy Meiss. All rights reserved."
   dateFormat = "2 January 2006"
 
   # mainSections = ["section1", "section2"]
+  # A disclaimer notice for the footer. Requires `params.footer.showDisclaimer = true` in your `params.toml`
+  disclaimer = "Trans rights are human rights. Abortion is healthcare. Black Lives Matter."
   description = "Personal website of Jeremy Meiss, DevEx and DevRel Leader."
 
 [params.author]
