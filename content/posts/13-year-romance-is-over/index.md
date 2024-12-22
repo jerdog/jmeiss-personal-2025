@@ -2,6 +2,7 @@
 title: The 13-Year Romance is Over - Are There Greener Pastures?
 date: 2012-03-14T11:27:20-06:00
 draft: false
+showTableOfContents: true
 author:
   name: Jeremy Meiss
   image: /images/author/jeremy-meiss.jpg
@@ -11,7 +12,6 @@ tags:
   - Sprint
 summary: "Picking a wireless provider can sometimes be like dating - you both present yourselves as something you probably aren’t, but not willing to admit it until after you’re locked in."
 description: "Picking a wireless provider can sometimes be like dating - you both present yourselves as something you probably aren’t, but not willing to admit it until after you’re locked in."
-toc: false
 ---
 
 ## THE ROMANCE IS OVER — HEARTBREAK ANYONE?

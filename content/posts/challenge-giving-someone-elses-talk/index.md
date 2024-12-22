@@ -11,7 +11,7 @@ tags:
   - community
   - speaking
   - tips
-toc: false
+showTableOfContents: false
 ---
 
 _If a comedy improv troupe was running conference talks for a company, I imagine them setting this up a bit like this. Also, before we start, this happened to me recently - the names and situation have been changed to protect, well, everyone._

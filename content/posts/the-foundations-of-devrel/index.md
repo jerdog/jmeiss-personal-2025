@@ -12,10 +12,10 @@ tags:
   - community
   - devrel
   - series
-toc: true
+showTableOfContents: false
 ---
 
-_**Author's Note:** What follows is Part 2 of a (currently) 6 Part series on Developer Relations, and how we can move it forward into the years to come. It is not meant as a definitive roadmap, but more as a kickstart down the road of conversation. Please comment as you see fit, and be part of what Developer Relations can become._ 
+_**Author's Note:** What follows is Part 2 of a (currently) 6 Part series on Developer Relations, and how we can move it forward into the years to come. It is not meant as a definitive roadmap, but more as a kickstart down the road of conversation. Please comment as you see fit, and be part of what Developer Relations can become._
 
 ---
 
@@ -39,7 +39,7 @@ _**Author's Note:** What follows is Part 2 of a (currently) 6 Part series on Dev
 
 ## ”Begin at the beginning!”
 
-“Developer Relations”, commonly referred to as “DevRel” for short, is generally defined quite simply as 
+“Developer Relations”, commonly referred to as “DevRel” for short, is generally defined quite simply as
 
 >“a business organization or function that builds relationships with Developers”.
 

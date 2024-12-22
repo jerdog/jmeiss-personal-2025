@@ -3,7 +3,7 @@ title = 'From Text Editors to Cloud-based IDEs - a DevEx journey'
 date = 2024-06-10T06:49:35-05:00
 draft = false
 tags = [ "devex", "developer experience", "software development", "devops", "cloud", "ide"]
-toc = true
+showTableOfContents = true
 description = "Remember the days of text-based editors like Vim? It’s a far cry from today’s sophisticated IDEs with features like code completion and debugging tools, and “developer experience” is one of the biggest reasons why."
 summary = "The text-based editors of before are a far cry from today's sophisticated IDEs, and 'developer experience' is one of the biggest reasons why."
 [author]

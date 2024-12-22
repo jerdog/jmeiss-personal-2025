@@ -3,7 +3,6 @@ title: On Open Source and Building Communities
 date: 2017-10-28
 description: "Open source is where true innovation happens. There. I’ve said it. The free exchange of ideas, the creative juices that comes from open source and open source communities is unparalleled in proprietary businesses and software."
 summary: "Open source is where true innovation happens. There. I’ve said it. The free exchange of ideas, the creative juices that comes from open source and open source communities is unparalleled in proprietary businesses and software."
-
 draft: false
 author:
   name: Jeremy Meiss
@@ -13,7 +12,7 @@ tags:
   - open source
   - devrel
   - tips
-toc: true
+showTableOfContents: true
 ---
 
 Open source is where true innovation happens. There. I’ve said it. The free exchange of ideas, the creative juices that comes from open source and open source communities is unparalleled in proprietary businesses and software. So now that’s out of the way, let’s talk about what open source is and the advantages it can bring you and/or your business, and then we'll talk about the core pieces of building communities.

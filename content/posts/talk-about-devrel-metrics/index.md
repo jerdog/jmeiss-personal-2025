@@ -4,7 +4,7 @@ date = 2024-05-24T10:06:42-05:00
 draft = false
 hero = "/images/posts/devrel-metrics.jpg" # location of images should be in /images/posts/
 tags = [ "devrel", "metrics", "series" ]
-toc = true
+showTableOfContents = true
 summary = "Crunching numbers is hard. And OKRs suck. So that means we can forget about DevRel metrics, right? Well, chat about that now."
 [author]
     name = "Jeremy Meiss"

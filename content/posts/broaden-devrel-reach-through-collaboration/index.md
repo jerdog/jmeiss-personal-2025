@@ -11,7 +11,7 @@ tags:
   - collaboration
   - devrel
 draft: false
-toc: false
+showTableOfContents: false
 ---
 
 Community is hard. It just is. There. I said it. That's the blog post.

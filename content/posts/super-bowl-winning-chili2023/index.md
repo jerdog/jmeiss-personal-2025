@@ -10,7 +10,7 @@ tags:
   - community
   - devrel
   - tips
-toc: false
+showTableOfContents: false
 ---
 
 {{< button relref="#TheRecipe" >}}Jump to Recipe{{< /button >}}

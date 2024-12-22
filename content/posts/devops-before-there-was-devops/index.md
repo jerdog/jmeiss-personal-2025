@@ -11,7 +11,7 @@ tags:
   - devops
   - humor
   - sysadmin
-toc: false
+showTableOfContents: false
 ---
 aka, "The early days of DevOps, from the perspective of a 20yr old"
 

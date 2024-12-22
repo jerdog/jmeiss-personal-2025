@@ -10,7 +10,7 @@ author:
 tags:
   - community
   - devrel
-toc: false
+showTableOfContents: false
 ---
 Odds are good that your company currently markets itself in one fashion or another, from Social Media to E-Mail Campaigns to online ads, traditional forms of advertising from radio, to TV and print. Those outlets likely provide you with some substantive returns on your advertising dollars, however chances are you could be losing out in one very important medium — Developers.
 

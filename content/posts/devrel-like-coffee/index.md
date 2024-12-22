@@ -11,7 +11,7 @@ tags:
   - devrel
   - coffee
   - community
-toc: false
+showTableOfContents: true
 ---
 So the year is 2008. My wife and I have 3 kids, 2 full-time jobs, and we’ve just bought a coffee shop. No one ever said I was the smartest pea in the pod.
 

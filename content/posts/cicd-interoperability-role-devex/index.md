@@ -12,7 +12,7 @@ tags:
   - developer experience
   - devops
   - cicd
-toc: true
+showTableOfContents: true
 ---
 
 *Image created by ChatGPT / DALL-E*

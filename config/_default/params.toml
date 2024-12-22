@@ -30,7 +30,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
 
 [footer]
   showCopyright = true
-  showDisclaimer = true #
+  showDisclaimer = true
   showThemeAttribution = true
   showAppearanceSwitcher = false
   showScrollToTop = true
@@ -42,7 +42,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
 
 [article]
   showDate = true
-  showDateUpdated = false
+  showDateUpdated = true
   showAuthor = true
   showBreadcrumbs = false
   showDraftLabel = true
@@ -53,19 +53,19 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = false
-  showTaxonomies = false
+  showTableOfContents = true
+  showTaxonomies = true
   showWordCount = false
   showComments = false
-  # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "threads", "telegram", "line", "weibo"]
+  sharingLinks = ["facebook", "x-twitter", "mastodon", "reddit", "linkedin", "email", "threads", "bluesky"]
 
 [list]
-  showBreadcrumbs = false
-  showSummary = false
-  showTableOfContents = false
+  showBreadcrumbs = true
+  showSummary = true
+  showTableOfContents = true
   showTaxonomies = false
   groupByYear = true
-  paginationWidth = 1
+  paginationWidth = 2
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]

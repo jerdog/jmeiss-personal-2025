@@ -7,6 +7,8 @@ summaryLength = 0
 
 ignoreLogs = ['shortcode-twitter-getremote']
 
+enableGitInfo = true
+
 [pagination]
   pagerSize = 10
 

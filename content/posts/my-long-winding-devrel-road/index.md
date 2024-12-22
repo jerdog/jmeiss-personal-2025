@@ -10,7 +10,7 @@ author:
 tags:
   - devrel
   - career
-toc: false
+showTableOfContents: false
 ---
 Hi, I'm Jeremy. I've spent the last roughly 25 years in IT, with the last 12 or so being a part of technical communities and Developer Relations (DevRel). For those who are new to the term, DevRel is literally about _building relationships with the developer community_. It is being the advocate for developers using your product, service, "thing", back to areas in your company or organisation, like Product and Engineering, about their experience(s), suggestions, etc. As Mary Thengvall likes to describe DevRel in her [book](https://t.co/axOdZlTEth):
 

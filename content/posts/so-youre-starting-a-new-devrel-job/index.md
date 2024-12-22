@@ -11,7 +11,7 @@ tags:
   - community
   - devrel
   - tips
-toc: true
+showTableOfContents: true
 ---
 
 It’s not uncommon to start a new Developer Relations or Community job at a company and either be their first hire, or you’re coming in after someone else (or a group) has left, or you’re coming in to take over the team (or any variety of these and others not mentioned). Usually during your initial onboarding you’re asked to provide a 30/60/90 plan along with a strategy for the next year. This may seem daunting, but it’s something you should be prepared to do.
