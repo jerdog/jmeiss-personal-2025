@@ -147,4 +147,5 @@
     {{ if templates.Exists "partials/extend-head.html" }}
       {{ partial "extend-head.html" . }}
     {{ end }}
+    {{ template "_internal/google_analytics.html" . }}
   </head>

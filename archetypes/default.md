@@ -3,11 +3,11 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 draft = true
 # publishDate =   # should be date in the future to publish once no longer draft
-tags = [ "", "", "" ]
-toc = true
+showTableOfContents = true
 description = ""
 summary = ""
-[author]
-    name = "Jeremy Meiss"
-    image = "/images/author/jeremy-meiss.jpg"
+featureAlt = "" # The alternative text description for the feature image.
+coverAlt = "" # The alternative text description for the cover image.
+thumbnailAlt = "" # The alternative text description for the thumbnail image.
+keywords = [ "", "", "" ]
 +++

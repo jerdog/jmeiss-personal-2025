@@ -1,3 +1,15 @@
+/* custom css for the site */
+
 .max-w-prose {
-    max-width: 75ch;
+    max-width: 80ch;
+}
+
+/* set max width to 80ch for posts */
+.prose {
+    max-width: 80ch !important;
+}
+
+/* set min width to 80% */
+.min-w-0 {
+    min-width: 80%;
 }
