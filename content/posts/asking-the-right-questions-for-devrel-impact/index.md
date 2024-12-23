@@ -38,7 +38,7 @@ _Also of note: much of this specific content comes from a previous post I wrote,
 
 ---
 
-When you start a new Developer Relations or Community role at a company, you may well be their first hire, or you're coming in after someone else (or a group) has left, or you’re coming in to take over the team (or any variety of these and others not mentioned). During that initial onboarding you'll usually be asked to provide a 30/60/90 plan along with a strategy for the next year. This may seem daunting, but it’s something you should be prepared to do. You may also be coming at this as someone who's already in the role at the company, but you're wanting to reshape your DevRel Program to gain the maximum impact at your company. What follows
+When you start a new Developer Relations or Community role at a company, you may well be their first hire, or you're coming in after someone else (or a group) has left, or you’re coming in to take over the team (or any variety of these and others not mentioned). During that initial onboarding you'll usually be asked to provide a 30/60/90 plan along with a strategy for the next year. This may seem daunting, but it’s something you should be prepared to do. You may also be coming at this as someone who's already in the role at the company, but you're wanting to reshape your DevRel Program to gain the maximum impact at your company.
 
 I’ve personally spent roughly the last 15 years in the Community and/or DevRel space, with the last 12 or so in an official capacity. What follows are the questions and steps I’ve learned to apply which are by no means a complete list - I’ve added to this list after each role change - but should be a good starting point for you.
 
