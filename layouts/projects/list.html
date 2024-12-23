@@ -16,12 +16,12 @@
         {{ range $code}}
         <article class="pb-6 py-3">
             <a class="flex" href="
-            {{- if .Params.ExternalUrl -}}
-                {{- .Params.ExternalUrl -}}
+            {{- if $.Params.externalUrl -}}
+                {{- . -}}
             {{ else }}
-                {{- .Params.RelPermalink -}}
+                {{- .RelPermalink -}}
             {{ end }}"
-            aria-label="{{ .Params.Title | emojify }}">
+            aria-label="link to {{ .Params.Title | emojify }}">
             <div class="mr-3 text-3xl text-neutral-300">
                 <span class="relative inline-block align-text-bottom">
                 {{ partial "icon.html" .Params.icon }}
@@ -51,12 +51,12 @@
             {{ range $community}}
             <article class="pb-6 py-3">
                 <a class="flex" href="
-                {{- if .Params.ExternalUrl -}}
-                    {{- .Params.ExternalUrl -}}
+                {{- if $.Params.externalUrl -}}
+                    {{- . -}}
                 {{ else }}
-                    {{- .Params.RelPermalink -}}
+                    {{- .RelPermalink -}}
                 {{ end }}"
-                aria-label="{{ .Params.Title | emojify }}">
+                aria-label="link to {{ .Params.Title | emojify }}">
                 <div class="mr-3 text-3xl text-neutral-300">
                     <span class="relative inline-block align-text-bottom">
                     {{ partial "icon.html" .Params.icon }}
