@@ -1,9 +1,11 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 company = "{{ replace .File.ContentBaseName "-" " " | title }}"
+link = ""
 job = ""
 location = ""
-icon = ""
+logo = ""
+logoDark = ""
 description = ""
 showTableOfContents = false
 showReadingTime = false
