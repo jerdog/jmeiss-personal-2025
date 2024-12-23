@@ -2,7 +2,7 @@
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
 draft = true
-publishDate =   # should be date in the future to publish once no longer draft
+# publishDate =   # should be date in the future to publish once no longer draft
 tags = [ "", "", "" ]
 toc = true
 description = ""

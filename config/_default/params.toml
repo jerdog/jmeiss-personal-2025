@@ -62,6 +62,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
 [list]
   showBreadcrumbs = true
   showSummary = true
+  showDateUpdated = false
   showTableOfContents = true
   showTaxonomies = false
   groupByYear = true
