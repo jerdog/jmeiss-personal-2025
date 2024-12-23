@@ -1,0 +1,79 @@
+{{ define "main" }}
+  <header>
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral py-8">{{ .Title }}</h1>
+    {{ .Content | markdownify }}
+  </header>
+  {{ $code := where .Pages "Params.project" "code" }}
+  {{ $community := where .Pages "Params.project" "community" }}
+  {{ if gt (len $code) 0 }}
+    <section class="mt-8 py-8">
+        <h2 class="text-2xl font-semibold">Code Projects</h2>
+        {{- $images := $.Resources.ByType "image" }}
+        {{- $thumbnail := $images.GetMatch (.Params.thumbnail | default "*thumb*") }}
+        {{ range $code}}
+        <article class="pb-6 py-3">
+            <a class="flex" href="
+            {{- if .Params.ExternalUrl -}}
+                {{- .Params.ExternalUrl -}}
+            {{ else }}
+                {{- .Params.RelPermalink -}}
+            {{ end }}"
+            aria-label="{{ .Params.Title | emojify }}">
+            <div class="mr-3 text-3xl text-neutral-300">
+                <span class="relative inline-block align-text-bottom">
+                {{ partial "icon.html" .Params.icon }}
+                </span>
+            </div>
+            <div>
+                <h3 class="flex text-xl font-semibold">
+                {{ .Params.Title }}
+                </h3>
+                <p class="text-sm text-neutral-400">
+                {{ .Params.Description }}
+                </p>
+            </div>
+            </a>
+        </article>
+        {{ end }}
+    </section>
+  {{ end }}
+
+<hr class="border-neutral-300 dark:border-neutral-600" />
+
+  {{ if gt (len $community) 0 }}
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold">Community Projects</h2>
+        {{- $images := $.Resources.ByType "image" }}
+        {{- $thumbnail := $images.GetMatch (.Params.thumbnail | default "*thumb*") }}
+            {{ range $community}}
+            <article class="pb-6 py-3">
+                <a class="flex" href="
+                {{- if .Params.ExternalUrl -}}
+                    {{- .Params.ExternalUrl -}}
+                {{ else }}
+                    {{- .Params.RelPermalink -}}
+                {{ end }}"
+                aria-label="{{ .Params.Title | emojify }}">
+                <div class="mr-3 text-3xl text-neutral-300">
+                    <span class="relative inline-block align-text-bottom">
+                    {{ partial "icon.html" .Params.icon }}
+                    </span>
+                </div>
+                <div>
+                    <h3 class="flex text-xl font-semibold">
+                    {{ .Params.Title }}
+                    </h3>
+                    <p class="text-sm text-neutral-400">
+                    {{ .Params.Description }}
+                    </p>
+                </div>
+                </a>
+            </article>
+            {{ end }}
+    </section>
+  {{ end }}
+
+{{ end }}
