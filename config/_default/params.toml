@@ -56,7 +56,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
   showTableOfContents = true
   showTaxonomies = true
   showWordCount = false
-  showComments = false
+  showComments = true
   sharingLinks = ["facebook", "x-twitter", "mastodon", "reddit", "linkedin", "email", "threads", "bluesky"]
 
 [list]
