@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <header>
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral py-8">{{ .Title }}</h1>
+    {{ .Content | markdownify }}
+  </header>
+    <section class="mt-8">
+        {{- $images := $.Resources.ByType "image" }}
+        {{- $thumbnail := $images.GetMatch (.Params.thumbnail | default "*thumb*") }}
+        {{- $logo := .Params.Logo }}
+        {{- $logo_dark := .Params.logoDark }}
+        {{ range sort .Pages ".Params.startDate" "desc" }}
+        <article class="pb-6 py-3">
+            <!-- <a class="flex" href="{{- .RelPermalink -}}" aria-label="link to {{ .Params.Title | emojify }}"> -->
+            <!-- <div class="mr-3 text-3xl text-neutral-300">
+                <img alt="{{ .Params.Company }} company logo"
+                    src="{{ .Params.Logo | safeHTML }}" class="w-24 max-w-[6rem] max-h-[4.5rem] rounded-md sm:w-20 sm:max-w-[10rem]{{ if $logo_dark }}hidden dark:flex{{ end }}">
+                {{- if $logo_dark }}
+                <img alt="{{ .Params.Company }} company logo"
+                    src="{{ .Params.LogoDark | safeHTML }}"
+                    class="w-24 max-w-[6rem] max-h-[4.5rem] rounded-md sm:w-20 sm:max-w-[10rem]
+                    dark:hidden">
+                {{ end }}
+            </div> -->
+            <div>
+                <h3 class="flex text-xl font-semibold">
+                {{ .Params.Job }}
+                </h3>
+                <p><a href="{{ .Params.link | safeHTML }}">{{ .Params.Company }}</a>, {{ .Params.Location }}</p>
+                <p class="text-base text-neutral-400 font-semibold">
+                {{ .Params.startDate | dateFormat "Jan 2006" }} -
+                {{ if .Params.endDate }}{{- .Params.endDate | dateFormat "Jan 2006" -}}{{ else }}Present{{ end }}</p>
+                <p class="text-base text-neutral-400">
+                {{ .Description }}
+                </p>
+            </div>
+            </a>
+        </article>
+        {{ end }}
+    </section>
+
+{{ end }}

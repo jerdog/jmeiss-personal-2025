@@ -1,0 +1,10 @@
+{{- $icon := resources.Get (print "icons/" . ".svg") -}}
+{{- if $icon -}}
+  <span class="icon relative inline-block px-1 align-text-bottom">
+    <img alt="{{ .Params.icon }} company logo"
+    {{ if eq .MediaType.SubType "svg" }}
+      class="w-24 max-w-[6rem] max-h-[4.5rem] rounded-md sm:max-h-[7.5rem] sm:w-40 sm:max-w-[10rem]"
+      src="{{- $icon.Content | safeHTML -}}"
+    {{ end }}>
+  </span>
+{{- end -}}
