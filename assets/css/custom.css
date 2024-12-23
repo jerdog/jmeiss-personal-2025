@@ -5,13 +5,18 @@
 }
 
 /* set max width to 80ch for posts */
-.prose {
+/* .prose {
     max-width: 80ch !important;
-}
+} */
 
 /* set min width to 80% */
-.min-w-0 {
+/* .min-w-0 {
     min-width: 80%;
+} */
+
+img {
+    max-width: 80ch;
+    height: auto;
 }
 
 
