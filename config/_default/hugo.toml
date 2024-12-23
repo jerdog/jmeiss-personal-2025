@@ -14,3 +14,9 @@ enableGitInfo = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[frontmatter]
+  date = ['date', 'publishDate', 'pubdate', 'lastmod', 'modified']
+  expiryDate = ['expiryDate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishDate', 'pubdate']
+  publishDate = ['publishDate', 'pubdate', 'date']

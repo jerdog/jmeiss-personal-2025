@@ -3,6 +3,7 @@
   {{- $cover := $images.GetMatch (.Params.cover | default "*cover*") }}
   {{- $feature := $images.GetMatch (.Params.feature | default "*feature*") | default $cover }}
   <article>
+    <meta name="fediverse:creator" content="@jerdog@hachyderm.io">
     <header class="max-w-prose">
       {{ with $feature }}
       <div class="prose">
