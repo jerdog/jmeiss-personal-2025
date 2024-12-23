@@ -1,0 +1,8 @@
+<!-- extending footer, per https://jpanther.github.io/congo/docs/partials/#head-and-footer -->
+
+{{ $disclaimerEnabled  := site.Params.footer.showDisclaimer  | default false }}
+{{ $disclaimer := .Site.Params.disclaimer | default "" }}
+<!-------------- Disclaimer / Notice --------------->
+{{ if (and $disclaimerEnabled $disclaimer) }}
+    <p id="disclaimer"><strong>{{ $disclaimer | markdownify }}</strong></p>
+{{ end }}
