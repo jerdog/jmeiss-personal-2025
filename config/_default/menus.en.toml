@@ -81,3 +81,18 @@
     name = "Categories"
     pageRef = "categories"
     weight = 20
+
+  [[footer]]
+    name = "Blog"
+    pageRef = "posts"
+    weight = 30
+
+  [[footer]]
+    name = "Projects"
+    pageRef = "projects"
+    weight = 40
+
+  [[footer]]
+    name = "Experience"
+    pageRef = "experience"
+    weight = 50
