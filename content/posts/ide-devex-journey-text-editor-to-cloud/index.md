@@ -6,9 +6,7 @@ tags = [ "devex", "developer experience", "software development", "devops", "clo
 showTableOfContents = true
 description = "Remember the days of text-based editors like Vim? It’s a far cry from today’s sophisticated IDEs with features like code completion and debugging tools, and “developer experience” is one of the biggest reasons why."
 summary = "The text-based editors of before are a far cry from today's sophisticated IDEs, and 'developer experience' is one of the biggest reasons why."
-[author]
-    name = "Jeremy Meiss"
-    image = "/images/author/jeremy-meiss.jpg"
+blueSkyThread = '3le3evm3rry2h'
 +++
 
 Remember the days of text-based editors like [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) and [Emacs](https://en.wikipedia.org/wiki/Emacs)? It’s a far cry from today’s sophisticated IDEs with features like code completion and debugging tools, and “developer experience” is one of the biggest reasons why.

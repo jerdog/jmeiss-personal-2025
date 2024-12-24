@@ -6,9 +6,7 @@ hero = "/images/posts/devrel-metrics.jpg" # location of images should be in /ima
 tags = [ "devrel", "metrics", "series" ]
 showTableOfContents = true
 summary = "Crunching numbers is hard. And OKRs suck. So that means we can forget about DevRel metrics, right? Well, chat about that now."
-[author]
-    name = "Jeremy Meiss"
-    image = "/images/author/jeremy-meiss.jpg"
+blueskythread = '3le2ntjjmdu2l'
 +++
 
 _**Author's Note:** What follows is Part 6 of a (now) 6 Part (and probably a 7th part to come) series on Developer Relations, and how we can move it forward into the years to come. It is not meant as a definitive roadmap, but more as a kickstart down the road of conversation. Please comment as you see fit, and be part of what Developer Relations can become._
