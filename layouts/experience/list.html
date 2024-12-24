@@ -28,7 +28,7 @@
                 <h3 class="flex text-xl font-semibold">
                 {{ .Params.Job }}
                 </h3>
-                <p><a href="{{ .Params.link | safeHTML }}">{{ .Params.Company }}</a>, {{ .Params.Location }}</p>
+                <p><a href="{{ .Params.link | safeURL }}">{{ .Params.Company }}</a>, {{ .Params.Location }}</p>
                 <p class="text-base text-neutral-400 font-semibold">
                 {{ .Params.startDate | dateFormat "Jan 2006" }} -
                 {{ if .Params.endDate }}{{- .Params.endDate | dateFormat "Jan 2006" -}}{{ else }}Present{{ end }}</p>
