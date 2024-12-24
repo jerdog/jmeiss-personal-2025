@@ -124,3 +124,17 @@ img {
     .#comment-interactions-icon > svg:is(.dark *) {
       stroke: var(--tw-prose-invert-lead);
     }
+
+/* css for About grid layout via https://cssgrid-generator.netlify.app/ */
+
+.about-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 5px;
+}
+
+.about-div1 { grid-area: 1 / 1 / 2 / 2; }
+.about-div2 { grid-area: 1 / 2 / 2 / 3; }
+.about-div3 { grid-area: 2 / 1 / 3 / 3; }

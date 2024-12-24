@@ -3,13 +3,13 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "Jeremy Meiss"
+title = "Jeremy Meiss | DevEx and DevRel Leader"  # Site title.
 copyright = "&copy; 2024-25. Jeremy Meiss. All rights reserved."
 
 [params]
   dateFormat = "2 January 2006"
-
-  mainSections = ["posts", "projects", "talks", "events"]
+  logoTitle = "Jeremy Meiss"  # Logo title.
+  mainSections = ["posts", "talks", "events"]
   # A disclaimer notice for the footer. Requires `params.footer.showDisclaimer = true` in your `params.toml`
   disclaimer = "Trans rights are human rights. Abortion is healthcare. Black Lives Matter."
   description = "Personal website of Jeremy Meiss, DevEx and DevRel Leader."

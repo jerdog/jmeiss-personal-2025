@@ -1,6 +1,6 @@
 baseURL = 'https://jmeiss.me/'
 languageCode = 'en-us'
-title = 'Jeremy Meiss | DevEx and DevRel Leader'
+# title = 'Jeremy Meiss | DevEx and DevRel Leader'  # Set the site title in languages.en.toml.
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 summaryLength = 0

@@ -27,6 +27,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
   # logo = "img/logo.jpg"
   # logoDark = "img/dark-logo.jpg"
   showTitle = true
+  logoTitle = "Jeremy Meiss"  # Title in place of logo. If logo is not set, this will be used. Anything set in languages.en.toml will override this.
 
 [footer]
   showCopyright = true
@@ -44,7 +45,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
   showDate = true
   showDateUpdated = true
   showAuthor = true
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
@@ -57,6 +58,7 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
   showTaxonomies = true
   showWordCount = false
   showComments = true
+  showSharing = true
   sharingLinks = ["facebook", "x-twitter", "mastodon", "reddit", "linkedin", "email", "threads", "bluesky"]
 
 [list]

@@ -1,3 +1,4 @@
+{{ if .Params.showSharing | default (.Site.Params.article.showSharing | default false) }}
 {{ with .Params.sharingLinks | default (.Site.Params.article.sharingLinks | default false) }}
   {{ $links := site.Data.sharing }}
   <section class="flex flex-row flex-wrap justify-center text-xl">
@@ -16,3 +17,5 @@
     {{ end }}
   </section>
 {{ end }}
+{{ end }}
+
