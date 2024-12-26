@@ -9,6 +9,7 @@ showAuthor = false
 showReadingTime = false
 showDate = false
 layout = "about"
+quote = '"Developers don’t care that you know, until they know that you care."'
 +++
 
 I am a Developer Experience and Developer Relations leader with nearly three decades of versatile experience in the tech industry, from support, networking, systems, databases, and application and website development, to developer relations and community engagement. With extensive experience at SMBs and enterprise companies like Auth0, CircleCI, Sprint, and Hallmark Cards, I am a committed advocate for open-source software and tools, and have a deep passion for developer relations, community, and their role in improving the developer experience. I am driven to enable the technically savvy to be your greatest champions.
