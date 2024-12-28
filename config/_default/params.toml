@@ -24,8 +24,8 @@ description = "Personal website of Jeremy Meiss, DevEx and DevRel Professional."
 
 [header]
   layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
-  # logo = "img/logo.jpg"
-  # logoDark = "img/dark-logo.jpg"
+  logo = "img/home_logo.png"
+  logoDark = "img/home_logo.png"
   showTitle = true
   logoTitle = "Jeremy Meiss"  # Title in place of logo. If logo is not set, this will be used. Anything set in languages.en.toml will override this.
 

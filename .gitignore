@@ -144,3 +144,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Misc
+.DS_Store   # macOS
+Thumbs.db   # Windows
