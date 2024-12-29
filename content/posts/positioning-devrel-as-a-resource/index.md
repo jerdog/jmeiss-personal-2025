@@ -12,6 +12,7 @@ tags:
   - devrel
   - series
 showTableOfContents: true
+blueskythread: "3leaki6mab32l"
 ---
 
 _**Author's Note:** What follows is Part 5 of a (currently) 6 Part series on Developer Relations, and how we can move it forward into the years to come. It is not meant as a definitive roadmap, but more as a kickstart down the road of conversation. Please comment as you see fit, and be part of what Developer Relations can become._

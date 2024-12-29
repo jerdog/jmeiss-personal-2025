@@ -5,7 +5,7 @@ draft = false
 hero = "/images/posts/devrel-metrics.jpg" # location of images should be in /images/posts/
 tags = [ "devrel", "metrics", "series" ]
 showTableOfContents = true
-summary = "Crunching numbers is hard. And OKRs suck. So that means we can forget about DevRel metrics, right? Well, chat about that now."
+summary = "Crunching numbers is hard. And OKRs suck. So that means we can forget about DevRel metrics, right? Well, let's chat about that now."
 blueskythread = '3le2ntjjmdu2l'
 +++
 
