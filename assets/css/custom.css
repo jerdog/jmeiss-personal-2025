@@ -4,26 +4,6 @@
   max-width: 80ch;
 }
 
-/* blockquote {
-  text-align: center;
-  margin: 0 auto;
-  width: auto;
-  font-size: 1.25rem;
-  /* max-width: 75%; */
-/* padding-left: 1.5rem; */
-/* display: table; */
-/* } */
-
-/* set max width to 80ch for posts */
-/* .prose {
-    max-width: 80ch !important;
-} */
-
-/* set min width to 80% */
-/* .min-w-0 {
-    min-width: 80%;
-} */
-
 img {
   max-width: 80ch;
   height: auto;
@@ -207,4 +187,18 @@ img {
       background-color: currentColor;
     }
   }
+}
+
+/* css for recent posts customizing */
+.recents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 6px 6px;
+  grid-auto-flow: row;
+  grid-template-areas: ". .";
+}
+
+h3 {
+  margin-left: 10px;
 }
