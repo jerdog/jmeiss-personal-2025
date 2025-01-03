@@ -17,7 +17,7 @@ copyright = "&copy; 2024-25. Jeremy Meiss. All rights reserved."
 [params.author]
   name = "Jeremy Meiss"
   image = "img/author.jpg"
-  headline = "DevEx and DevRel Leader"
+  headline = "Passionate Developer {Experience|Relations} Leader"
   bio = "Jeremy is a tech veteran with vast experience and a passion for developers and community. He's an international speaker, active in the DevRel and DevOps scenes, and enjoys coffee, open source, and spending time with his family."
   links = [
     { linkedin = "https://linkedin.com/in/jeremymeiss" },
