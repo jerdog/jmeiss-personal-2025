@@ -22,10 +22,10 @@
         {{- $url := .Params.externalUrl | default (.RelPermalink | default false) }}
         <article class="pb-6 py-3">
             <a class="flex" href="{{ $url }}" aria-label="link to {{ .Params.Title | emojify }}">
-            <div class="mr-3 text-3xl text-neutral-300">
-                {{ if .Params.externalUrl }}{{ partial "icon.html" "external-link" }}{{ end }}
+            <!-- <div class="mr-3 text-3xl text-neutral-300"> -->
                 {{ partial "icon.html" .Params.icon }}
-            </div>
+                {{ if .Params.externalUrl }}{{ partial "icon.html" "external-link" }}{{ end }}
+            <!-- </div> -->
             <div>
                 <h3 class="flex text-xl font-semibold">
                 {{ .Params.Title }}
@@ -46,11 +46,10 @@
         {{- $url := .Params.externalUrl | default (.RelPermalink | default false) }}
         <article class="pb-6 py-3">
             <a class="flex" href="{{ $url }}" aria-label="link to {{ .Params.Title | emojify }}">
-            <div class="mr-3 text-3xl text-neutral-300">
-                <span class="relative inline-block align-text-bottom">
+            <!-- <div class="mr-3 text-3xl text-neutral-300"> -->
                 {{ partial "icon.html" .Params.icon }}
-                </span>
-            </div>
+                {{ if .Params.externalUrl }}{{ partial "icon.html" "external-link" }}{{ end }}
+            <!-- </div> -->
             <div>
                 <h3 class="flex text-xl font-semibold">
                 {{ .Params.Title }}
