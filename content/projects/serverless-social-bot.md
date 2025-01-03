@@ -8,4 +8,5 @@ topics: ["serverless", "social-media", "bot", "markov-chain", "bluesky", "javasc
 icon: "github"
 layout: "projects"
 project: "code"
+externalUrl: "https://github.com/jerdog/serverless-social-bot"
 ---

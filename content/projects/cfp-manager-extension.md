@@ -8,4 +8,5 @@ showAuthor: false
 topics: [ "cfp", "javascript" ]
 layout: "projects"
 project: "code"
+externalUrl: 'https://github.com/jerdog/cfp-chrome-extension'
 ---

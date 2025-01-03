@@ -8,4 +8,5 @@ showAuthor: false
 topics: [ "", "", "" ]
 layout: "projects"
 project: "" # code, community, etc.
+#externalUrl: ""
 ---

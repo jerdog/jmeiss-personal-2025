@@ -8,4 +8,5 @@ showReadingTime: false
 showAuthor: false
 layout: "projects"
 project: "code"
+externalUrl: 'https://github.com/jerdog/bluesky-notify'
 ---
