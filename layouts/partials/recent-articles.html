@@ -1,6 +1,47 @@
 {{ if .Site.Params.homepage.showRecent | default false }}
   <h2 class="mt-8 text-2xl font-extrabold">{{ i18n "shortcode.recent_articles" | emojify }}</h2>
+    <style>
+    .flex-contain {
+      display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+.flex-items {
+  flex: 0 0 calc(50% - 10px); /* 50% width minus half the gap */
+  min-width: calc(50% - 10px); /* Ensure minimum width */
+  max-width: calc(50% - 10px); /* Ensure maximum width */
+  display: block;
+  margin: 0;
+}
+.article-container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.article-col1 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.article-col2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article-row {
+  flex: 1;
+}
+
+  </style>
+  <div class="flex-contain">
   {{ range first .Site.Params.homepage.recentLimit (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) .Site.Params.homepage.recentLimit).Pages }}
+
+  <div class="flex-items">
     {{ partial "article-link.html" . }}
+  </div>
   {{ end }}
+</div>
 {{ end }}
