@@ -35,17 +35,17 @@
   {{ end }}
 
 
-  <div class="flex flex-row flex-wrap items-center">
+  <p class="text-sm text-neutral-500 dark:text-neutral-400">
     {{/* Output partials */}}
     {{ with ($meta.Get "partials") }}
       {{ delimit . "<span class=\"px-2 text-primary-500\">&middot;</span>" | safeHTML }}
     {{ end }}
 
-    {{/* Output draft label */}}
+    <!-- {{/* Output draft label */}}
     {{ if and (eq $scope "single") (and .Draft .Site.Params.article.showDraftLabel) }}
       <span class="ps-2">{{ partial "badge.html" (i18n "article.draft" | emojify) }}</span>
-    {{ end }}
-  </div>
+    {{ end }} -->
+  </p>
 
   {{/* Output taxonomies */}}
   {{ if or
