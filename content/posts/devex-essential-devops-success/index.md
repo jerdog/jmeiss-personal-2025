@@ -1,19 +1,19 @@
-+++
-title = "Developer Experience is essential for DevOps success"
-date = 2024-06-12T12:15:11-05:00
-draft = false
-publishDate = 2024-06-12T12:15:11-05:00
-tags = [ "devex", "developer experience", "devops" ]
-showTableOfContents = true
-description = "Explore how enhancing developer experience is crucial for DevOps success and fostering a productive, innovative engineering culture."
-summary = "DevEx is a factor throughout the development process and is influenced by chosen tools, technologies, and platforms. It also directly impacts how well our DevOps practices are implemented and adopted."
-keywords = [ "developer experience", "devex", "devops" ]
-slug = "developer-experience-essential-devops-success"
-[author]
-name = "Jeremy Meiss"
-image = "/images/author/jeremy-meiss.jpg"
-blueSkyThread = "3lec7mpi57h2a"
-+++
+---
+title: "Developer Experience is essential for DevOps success"
+date:  2024-06-12T12:15:11-05:00
+draft:  false
+publishDate:  2024-06-12T12:15:11-05:00
+tags:
+ - devex
+ - developer experience
+ - devops
+showTableOfContents:  true
+description:  "Explore how enhancing developer experience is crucial for DevOps success and fostering a productive, innovative engineering culture."
+summary:  "DevEx is a factor throughout the development process and is influenced by chosen tools, technologies, and platforms. It also directly impacts how well our DevOps practices are implemented and adopted."
+keywords: [ "developer experience", "devex", "devops" ]
+slug: "developer-experience-essential-devops-success"
+blueSkyThread: "3lec7mpi57h2a"
+---
 
 The ease with which a developer or ops practitioner interacts with a tool or service, from setup to even issue resolution, directly impacts their productivity, satisfaction, and even the quality of the products they build and use. DevEx is crucial throughout the development process and is influenced by chosen tools, technologies, and platforms. Ease of use, reliability, accessibility, documentation clarity, build efficiency, testing effectiveness, and deployment smoothness all impact the overall dev experience.
 

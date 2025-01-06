@@ -1,14 +1,19 @@
-+++
-title = 'Measuring the impact of Developer Relations on Revenue'
-date = 2024-07-12T11:13:06-05:00
-draft = false
-publishDate = 2024-07-13T08:00:00-05:00 # should be date in the future to publish once no longer draft
-tags = [ "devrel", "community", "revenue", "sales", "developer relations" ]
-showTableOfContents = false
-description = "DevRel is a practice, a discipline, that builds community with developers. It's also a way to directly impact the bottom line for a company. If you're willing to start tracking, and start measuring."
-summary = "DevRel is a practice, a discipline, that builds community with developers. It's also a way to directly impact the bottom line for a company. If you're willing to start tracking, and start measuring."
-blueskythread = '3ldz2u6bz7s2g'
-+++
+---
+title: 'Measuring the impact of Developer Relations on Revenue'
+date: 2024-07-12T11:13:06-05:00
+draft: false
+publishDate: 2024-07-13T08:00:00-05:00 # should be date in the future to publish once no longer draft
+tags:
+  - devrel
+  - community
+  - revenue
+  - sales
+  - developer relations
+showTableOfContents: false
+description: "DevRel is a practice, a discipline, that builds community with developers. It's also a way to directly impact the bottom line for a company. If you're willing to start tracking, and start measuring."
+summary: "DevRel is a practice, a discipline, that builds community with developers. It's also a way to directly impact the bottom line for a company. If you're willing to start tracking, and start measuring."
+blueSkyThread: '3ldz2u6bz7s2g'
+---
 
 If you've spent any amount of time either in, or within earshot of, [a gaggle of Developer Relations (DevRel) professionals](https://twitter.com/IAmJerdog/status/1502381487328534534), you've probably heard this phrase, or a variation of it:
 
