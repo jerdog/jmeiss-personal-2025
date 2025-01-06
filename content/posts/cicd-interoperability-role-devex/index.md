@@ -13,7 +13,7 @@ tags:
   - devops
   - cicd
 showTableOfContents: true
-blueSkyThread: ''
+blueSkyThread: '3lf3quapu3x2s'
 ---
 
 *Image created by ChatGPT / DALL-E*
