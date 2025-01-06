@@ -12,7 +12,7 @@ slug = "developer-experience-essential-devops-success"
 [author]
 name = "Jeremy Meiss"
 image = "/images/author/jeremy-meiss.jpg"
-blueSkythread = '3lec7mpi57h2a'
+blueSkyThread = '3lec7mpi57h2a'
 +++
 
 The ease with which a developer or ops practitioner interacts with a tool or service, from setup to even issue resolution, directly impacts their productivity, satisfaction, and even the quality of the products they build and use. DevEx is crucial throughout the development process and is influenced by chosen tools, technologies, and platforms. Ease of use, reliability, accessibility, documentation clarity, build efficiency, testing effectiveness, and deployment smoothness all impact the overall dev experience.
