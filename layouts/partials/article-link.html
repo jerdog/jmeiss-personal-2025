@@ -4,14 +4,12 @@
       {{- $feature := $images.GetMatch (.Params.feature | default "*feature*") | default $thumbnail }}
       {{- with $feature }}
         <div class="article-col1">
-          <a
-            href="{{ with $.Params.externalUrl }}
+          <a href="{{- with $.Params.externalUrl -}}
               {{ . }}
             {{ else }}
-              {{ $.RelPermalink }}
+              {{- $.RelPermalink -}}
             {{ end }}"
-            aria-label="{{ $.Title | emojify }}"
-          >
+            aria-label="{{ $.Title | emojify }}">
           <img
               alt="{{ $.Params.featureAlt | default $.Params.thumbnailAlt | default "" }}"
               {{ if eq .MediaType.SubType "svg" }}

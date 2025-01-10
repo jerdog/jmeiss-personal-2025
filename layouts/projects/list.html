@@ -14,7 +14,7 @@
   {{- $images := $.Resources.ByType "image" }}
   {{- $thumbnail := $images.GetMatch (.Params.thumbnail | default "*thumb*") }}
   <section class="mt-8 py-8">
-    <div class="flex-container">
+    <div class="article-container">
     {{ if gt (len $code) 0 }}
       <div class="flex-items">
         <h2 class="text-2xl font-semibold">Code Projects</h2>
