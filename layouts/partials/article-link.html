@@ -22,13 +22,13 @@
         </div>
       {{ end }}
         <div class="article-col2">
-          <div class="article-row">
+          <div class="article-row text-xl font-semibold">
             {{ .Title | emojify }}
           </div>
           <div class="article-row">
             {{ partial "article-meta.html" . }}
           </div>
-          <div class="article-row">
+          <div class="article-row prose dark:prose-invert">
             {{ .Summary | emojify }}
           </div>
         </div>
