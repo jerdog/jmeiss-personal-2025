@@ -4,6 +4,14 @@
       {{- $feature := $images.GetMatch (.Params.feature | default "*feature*") | default $thumbnail }}
       {{- with $feature }}
         <div class="article-col1">
+          <a
+            href="{{ with $.Params.externalUrl }}
+              {{ . }}
+            {{ else }}
+              {{ $.RelPermalink }}
+            {{ end }}"
+            aria-label="{{ $.Title | emojify }}"
+          >
           <img
               alt="{{ $.Params.featureAlt | default $.Params.thumbnailAlt | default "" }}"
               {{ if eq .MediaType.SubType "svg" }}
@@ -24,7 +32,7 @@
         <div class="article-col2">
           <div class="article-row text-xl font-semibold">
             {{ .Title | emojify }}
-          </div>
+          </div></a>
           <div class="article-row">
             {{ partial "article-meta.html" . }}
           </div>
