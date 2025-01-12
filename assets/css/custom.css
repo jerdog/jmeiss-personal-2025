@@ -220,34 +220,12 @@ gap: 10px;
 
 /* css for About grid layout via https://cssgrid-generator.netlify.app/ */
 
-.about-container {
-  display: grid;
-  grid-template-columns: 40% 1fr; /* Two equal columns */
-  gap: 16px;
-}
-
-.about-div1 {
-  grid-column: 1 / 2;
-}
-.about-div2 {   /* image column */
-  grid-column: 2 / 3;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-}
-.about-div2 img {
-    /* min-width: 150px; */
-    max-width: 150px;
-    /* width: calc(50% - 8px); */
-    flex: 1 1 calc(50% - 8px);
-    height: auto;
-    margin: 0 auto;
-}
-.about-div3 {
-  grid-column: 1 / -1; /* This spans both columns */
-  margin-top: 16px;
-}
+.about-container { display: grid; grid-template-columns: 40% 1fr; gap: 16px; }
+  .about-div1 { grid-column: 1 / 2; }
+/* image column */
+  .about-div2 { grid-column: 2 / 3; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    .about-div2 img { max-width: 150px; flex: 1 1 calc(50% - 8px); height: auto; margin: 0 auto; }
+  .about-div3 { grid-column: 1 / -1; margin-top: 16px; }
 
 .circular-progress {
   width: 150px;
