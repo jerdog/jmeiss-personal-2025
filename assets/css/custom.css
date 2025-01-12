@@ -114,26 +114,6 @@ img {
   stroke: var(--tw-prose-invert-lead);
 }
 
-/* css for About grid layout via https://cssgrid-generator.netlify.app/ */
-
-.about-container {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 5px;
-}
-
-.about-div1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.about-div2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-.about-div3 {
-  grid-area: 2 / 1 / 3 / 3;
-}
-
 /* css for blockquote styling */
 
 .blockquote {
@@ -235,5 +215,538 @@ gap: 10px;
 
   .article-container {
     flex-direction: column;
+  }
+}
+
+/* css for About grid layout via https://cssgrid-generator.netlify.app/ */
+
+.about-container {
+  display: grid;
+  grid-template-columns: 40% 1fr; /* Two equal columns */
+  gap: 16px;
+}
+
+.about-div1 {
+  grid-column: 1 / 2;
+}
+.about-div2 {   /* image column */
+  grid-column: 2 / 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.about-div2 img {
+    /* min-width: 150px; */
+    max-width: 150px;
+    /* width: calc(50% - 8px); */
+    flex: 1 1 calc(50% - 8px);
+    height: auto;
+    margin: 0 auto;
+}
+.about-div3 {
+  grid-column: 1 / -1; /* This spans both columns */
+  margin-top: 16px;
+}
+
+.circular-progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  box-shadow: none;
+  position: relative
+}
+.circular-progress::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #f8fafc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circular-progress span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1
+}
+.circular-progress .circular-progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0
+}
+.circular-progress .circular-progress-left {
+  left: 0
+}
+.circular-progress .circular-progress-left .circular-progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  transform-origin: center left
+}
+.circular-progress .circular-progress-right {
+  right: 0
+}
+.circular-progress .circular-progress-right .circular-progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  transform-origin: center right
+}
+.circular-progress .circular-progress-value {
+  width: 90%;
+  height: 90%;
+  padding: 1rem;
+  border-radius: 50%;
+  background: #334155;
+  font-size: 1rem;
+  color: #f8fafc;
+  line-height: initial;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.circular-progress.blue .circular-progress-bar {
+  border-color: #048dff
+}
+
+.circular-progress.yellow .circular-progress-bar {
+  border-color: #eebb4d
+}
+
+.circular-progress.pink .circular-progress-bar {
+  border-color: #ed63d2
+}
+
+.circular-progress.green .circular-progress-bar {
+  border-color: #2dca73
+}
+
+.circular-progress.sky .circular-progress-bar {
+  border-color: #00c9e3
+}
+
+.circular-progress.orange .circular-progress-bar {
+  border-color: #ff7c7c
+}
+
+.circular-progress .circular-progress-percentage-0 {
+  animation: circular-loading-0 0s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-0-delay {
+  animation-delay: 1.8s
+}
+
+.circular-progress .circular-progress-percentage-5 {
+  animation: circular-loading-5 .18s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-5-delay {
+  animation-delay: 1.98s
+}
+
+.circular-progress .circular-progress-percentage-10 {
+  animation: circular-loading-10 .36s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-10-delay {
+  animation-delay: 2.16s
+}
+
+.circular-progress .circular-progress-percentage-15 {
+  animation: circular-loading-15 .54s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-15-delay {
+  animation-delay: 2.34s
+}
+
+.circular-progress .circular-progress-percentage-20 {
+  animation: circular-loading-20 .72s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-20-delay {
+  animation-delay: 2.52s
+}
+
+.circular-progress .circular-progress-percentage-25 {
+  animation: circular-loading-25 .9s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-25-delay {
+  animation-delay: 2.7s
+}
+
+.circular-progress .circular-progress-percentage-30 {
+  animation: circular-loading-30 1.08s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-30-delay {
+  animation-delay: 2.88s
+}
+
+.circular-progress .circular-progress-percentage-35 {
+  animation: circular-loading-35 1.26s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-35-delay {
+  animation-delay: 3.06s
+}
+
+.circular-progress .circular-progress-percentage-40 {
+  animation: circular-loading-40 1.44s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-40-delay {
+  animation-delay: 3.24s
+}
+
+.circular-progress .circular-progress-percentage-45 {
+  animation: circular-loading-45 1.62s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-45-delay {
+  animation-delay: 3.42s
+}
+
+.circular-progress .circular-progress-percentage-50 {
+  animation: circular-loading-50 1.8s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-50-delay {
+  animation-delay: 3.6s
+}
+
+.circular-progress .circular-progress-percentage-55 {
+  animation: circular-loading-55 1.98s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-55-delay {
+  animation-delay: 3.78s
+}
+
+.circular-progress .circular-progress-percentage-60 {
+  animation: circular-loading-60 2.16s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-60-delay {
+  animation-delay: 3.96s
+}
+
+.circular-progress .circular-progress-percentage-65 {
+  animation: circular-loading-65 2.34s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-65-delay {
+  animation-delay: 4.14s
+}
+
+.circular-progress .circular-progress-percentage-70 {
+  animation: circular-loading-70 2.52s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-70-delay {
+  animation-delay: 4.32s
+}
+
+.circular-progress .circular-progress-percentage-75 {
+  animation: circular-loading-75 2.7s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-75-delay {
+  animation-delay: 4.5s
+}
+
+.circular-progress .circular-progress-percentage-80 {
+  animation: circular-loading-80 2.88s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-80-delay {
+  animation-delay: 4.68s
+}
+
+.circular-progress .circular-progress-percentage-85 {
+  animation: circular-loading-85 3.06s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-85-delay {
+  animation-delay: 4.86s
+}
+
+.circular-progress .circular-progress-percentage-90 {
+  animation: circular-loading-90 3.24s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-90-delay {
+  animation-delay: 5.04s
+}
+
+.circular-progress .circular-progress-percentage-95 {
+  animation: circular-loading-95 3.42s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-95-delay {
+  animation-delay: 5.22s
+}
+
+.circular-progress .circular-progress-percentage-100 {
+  animation: circular-loading-100 3.6s linear forwards 1.8s
+}
+
+.circular-progress .circular-progress-percentage-100-delay {
+  animation-delay: 5.4s
+}
+
+@keyframes circular-loading-0 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(0deg)
+  }
+}
+
+@keyframes circular-loading-5 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(18deg)
+  }
+}
+
+@keyframes circular-loading-10 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(36deg)
+  }
+}
+
+@keyframes circular-loading-15 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(54deg)
+  }
+}
+
+@keyframes circular-loading-20 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(72deg)
+  }
+}
+
+@keyframes circular-loading-25 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(90deg)
+  }
+}
+
+@keyframes circular-loading-30 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(108deg)
+  }
+}
+
+@keyframes circular-loading-35 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(126deg)
+  }
+}
+
+@keyframes circular-loading-40 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(144deg)
+  }
+}
+
+@keyframes circular-loading-45 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(162deg)
+  }
+}
+
+@keyframes circular-loading-50 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(180deg)
+  }
+}
+
+@keyframes circular-loading-55 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(198deg)
+  }
+}
+
+@keyframes circular-loading-60 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(216deg)
+  }
+}
+
+@keyframes circular-loading-65 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(234deg)
+  }
+}
+
+@keyframes circular-loading-70 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(252deg)
+  }
+}
+
+@keyframes circular-loading-75 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(270deg)
+  }
+}
+
+@keyframes circular-loading-80 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(288deg)
+  }
+}
+
+@keyframes circular-loading-85 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(306deg)
+  }
+}
+
+@keyframes circular-loading-90 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(324deg)
+  }
+}
+
+@keyframes circular-loading-95 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(342deg)
+  }
+}
+
+@keyframes circular-loading-100 {
+  0% {
+      transform: rotate(0)
+  }
+
+  100% {
+      transform: rotate(360deg)
+  }
+}
+
+@media (max-width: 1024px) {
+  .circular-progress {
+      margin-bottom:20px
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section .about-section.container {
+      max-width:100%
+  }
+
+  .circular-progress {
+      width: 135px;
+      height: 135px
+  }
+}
+
+@media (max-width: 640px) {
+  .circular-progress {
+      width:150px;
+      height: 150px
+  }
+
+  .circular-progress .circular-progress-value {
+      font-size: 1rem
   }
 }

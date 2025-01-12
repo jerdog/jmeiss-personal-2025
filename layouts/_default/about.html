@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <article>
     <header class="max-w-prose">
         {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
@@ -10,9 +9,14 @@
         </h1>
     </header>
     <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
-        <div class="about-container min-h-0 min-w-0 max-w-prose">
+        <div class="about-container min-h-0 min-w-0">
             <div class="about-div1">{{ .Content | markdownify }}</div>
-            <div class="about-div2"><img src="/img/author.jpg" width="100%"> </div>
+            <div class="about-div2">
+                    <!-- soft skills circular-progressbar -->
+                  {{ range .Params.badges }}
+                        {{ partial "badge.html" . }}
+                  {{ end }}
+            </div>
             <div class="about-div3 items-center">
                 <blockquote class="blockquote blockquote--slashes">
                     <p>{{ .Params.Quote | markdownify | emojify }}</p>
