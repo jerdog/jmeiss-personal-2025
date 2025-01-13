@@ -6,52 +6,24 @@
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral py-8">{{ .Title }}</h1>
     {{ .Content | markdownify }}
   </header>
-
-  <style>
-.exp-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr; /* Two columns: 1 for image, 1 for text rows */
-  grid-template-rows: repeat(4, 1fr); /* 4 equal-height rows */
-  gap: 10px; /* Optional spacing */
-  height: 100vh; /* Full viewport height */
-}
-.exp-image {
-  grid-column: 2 / 2; /* Place in the first column */
-  grid-row: 1 / span 2; /* Span 4 rows */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center content */
-}
-.text-text {
-  grid-column: 1 / 2; /* Place in the second column */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center text */
-  border: 1px solid #ccc; /* Optional border */
-}
-  </style>
-
     <section class="mt-8">
         {{- $logo := .Params.Logo }}
         {{- $logo_dark := .Params.logoDark }}
         {{ range sort .Pages ".Params.startDate" "desc" }}
         <article class="pb-6 py-3 exp-container">
-            <div class="exp-text">
-                <h3 class="flex text-xl font-semibold">{{ .Params.Job }}</h3>
-                <p><a href="{{ .Params.link | safeURL }}" target="_blank">{{ .Params.Company }}</a>, {{ .Params.Location }}</p>
+            <div>
+                <h3 class="text-xl font-semibold">{{ .Params.Job }}</h3>
+                <p style="font-style: italic;"><a href="{{ .Params.link | safeURL }}" target="_blank">{{ .Params.Company }}</a>, {{ .Params.Location }}</p>
+                <p class="text-base text-neutral-400 font-semibold">
+                  {{ .Params.startDate | dateFormat "Jan 2006" }} -
+                  {{ if .Params.endDate }}{{- .Params.endDate | dateFormat "Jan 2006" -}}{{ else }}Present{{ end }}</p>
+                  <p class="text-base text-neutral-400">
+                  {{ .Description }}
+                  </p>
             </div>
             <div class="exp-image">
                 <img src="{{ .Params.Logo | safeURL }}">
             </div>
-            <div class="exp-text">
-                <p class="text-base text-neutral-400 font-semibold">
-                {{ .Params.startDate | dateFormat "Jan 2006" }} -
-                {{ if .Params.endDate }}{{- .Params.endDate | dateFormat "Jan 2006" -}}{{ else }}Present{{ end }}</p>
-                <p class="text-base text-neutral-400">
-                {{ .Description }}
-                </p>
-            </div>
-            </a>
         </article>
         {{ end }}
     </section>
