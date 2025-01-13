@@ -10,8 +10,9 @@
         {{- $logo := .Params.Logo }}
         {{- $logo_dark := .Params.logoDark }}
         {{ range sort .Pages ".Params.startDate" "desc" }}
-        <article class="pb-6 py-3 exp-container">
-            <div>
+        <article class="pb-6 py-3">
+            <div class="exp-container">
+              <div class="exp-text">
                 <h3 class="text-xl font-semibold">{{ .Params.Job }}</h3>
                 <p style="font-style: italic;"><a href="{{ .Params.link | safeURL }}" target="_blank">{{ .Params.Company }}</a>, {{ .Params.Location }}</p>
                 <p class="text-base text-neutral-400 font-semibold">
@@ -20,9 +21,10 @@
                   <p class="text-base text-neutral-400">
                   {{ .Description }}
                   </p>
-            </div>
-            <div class="exp-image">
-                <img src="{{ .Params.Logo | safeURL }}">
+              </div>
+              <div class="exp-image">
+                <a href="{{ .Params.link | safeURL }}" target="_blank"><img src="{{ .Params.Logo | safeURL }}"></a>
+              </div>
             </div>
         </article>
         {{ end }}

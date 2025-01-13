@@ -730,5 +730,6 @@ gap: 10px;
 }
 
 /* css for experience list */
-.exp-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.exp-image { grid-column: 2 / 2; display: flex; justify-content: center; align-items: center; }
+.exp-container { display: grid; grid-template-columns: 60% 1fr; gap: 24px; }
+.exp-text { display: grid; grid-column: 1 / 2; }
+.exp-image { grid-column: 2 / 2; display: flex; justify-content: center; align-items: center; max-width: 300px; }

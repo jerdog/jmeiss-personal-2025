@@ -148,3 +148,4 @@ dist
 # Misc
 .DS_Store   # macOS
 Thumbs.db   # Windows
+.DS_Store*
