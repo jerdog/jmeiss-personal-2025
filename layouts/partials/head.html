@@ -32,12 +32,9 @@
       {{ $assets.Add "css" (slice $cssCustom) }}
     {{ end }}
     {{ $bundleCSS := $assets.Get "css" | resources.Concat "css/main.bundle.css" | resources.Minify | resources.Fingerprint $algorithm }}
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="{{ $bundleCSS.RelPermalink }}"
-      integrity="{{ $bundleCSS.Data.Integrity }}"
-    />
+    <link type="text/css" rel="stylesheet" href="{{ $bundleCSS.RelPermalink }}" integrity="{{ $bundleCSS.Data.Integrity }}" />
+    <!-- add lineicons: https://lineicons.com/icons -->
+    <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
     {{ if .Site.Params.enableSearch | default false }}
       {{ $jsFuse := resources.Get "lib/fuse/fuse.min.js" }}
       {{ $jsSearch := resources.Get "js/search.js" }}
