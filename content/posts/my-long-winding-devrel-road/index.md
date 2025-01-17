@@ -19,7 +19,7 @@ Hi, I'm Jeremy. I've spent the last roughly 25 years in IT, with the last 12 or 
 
 It wasn't until I recorded an episode on DevRel for the SlashData Podcast that I looked back at where I began in DevRel and Community, and became surprised at a few things I had forgotten.
 
-{{< tweet user="iamjerdog" id="1120692581913047040" >}}
+{{< x user="iamjerdog" id="1120692581913047040" >}}
 
 At certain times in your career it is good to reflect on the journey, the things you've learned, gain insight that you didn't previously think of, and prepare for the future. This is one of those times, and quite honestly I think the first time I've ever truly done this.
 
@@ -59,7 +59,7 @@ Fun fact: When I explained what I did at Sprint and subsequent positions to my w
 
 I spent two years there, leaving after not getting the official job I had been doing for the previous 6 months and being told by the CEO that I would never amount to anything in tech:
 
-{{< tweet user="iamjerdog" id="1108769459894796288" >}}
+{{< x user="iamjerdog" id="1108769459894796288" >}}
 
 After a short stint trying to manage IT for a small, local company trying to become the online classified listing hub (This was 1997, eBay (AuctionWeb) started in 1995 - it failed, but I left before), I moved to Hallmark Cards. Yes, that Hallmark, at the Corporate HQ in Kansas City. Initially hired in as a Customer Support Rep, I quickly showed that my ability to couple my tech acumen with good people skills and communication could be used elsewhere, I became the person who would be called into meetings to help advocate for the [internal] customer to IT. Eventually, I took on a role called "Technical Liaison", which I didn't realise until recently was my first, official foray into Developer Relations. It was 1999.
 

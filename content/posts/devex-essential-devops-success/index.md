@@ -95,7 +95,7 @@ Some of the better practices to keep in mind when leveling up with DevEx are:
 
 A company's investment level in DevEx can reflect its values toward its employees, especially its developers. A strong focus on DevEx shows a commitment to employee well-being and efficiency. Prioritizing DevEx helps foster a culture of excellence and innovation. When developers have the right tools, support, and environment, they are more likely to produce high-quality work and push the boundaries of what's possible.
 
-{{< tweet user="IAmJerdog" id=1750563607266410692 >}}
+{{< x user="IAmJerdog" id=1750563607266410692 >}}
 
 ---
 
